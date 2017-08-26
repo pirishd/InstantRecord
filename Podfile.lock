@@ -1,0 +1,17 @@
+PODS:
+  - InstantMock (1.1.6)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+
+DEPENDENCIES:
+  - InstantMock
+  - MagicalRecord
+
+SPEC CHECKSUMS:
+  InstantMock: 9620ea8b17daba3d1817d52067ab9d1275326efb
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+
+PODFILE CHECKSUM: b2842b0b34afd53018fbfa20f8372cc5232a15c7
+
+COCOAPODS: 1.2.1

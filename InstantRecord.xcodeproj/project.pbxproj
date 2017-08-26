@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3514E37CA443700C2C1E4965 /* Pods_InstantRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEE91D2B4C659D0468BE984 /* Pods_InstantRecord.framework */; };
 		43E67F6F1F515F900016E499 /* InstantRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E67F651F515F900016E499 /* InstantRecord.framework */; };
 		43E67F741F515F900016E499 /* InstantRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F731F515F900016E499 /* InstantRecordTests.swift */; };
 		43E67F761F515F900016E499 /* InstantRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E67F681F515F900016E499 /* InstantRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F1970AA4159EE87D6477188 /* Pods_InstantRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC6E0ECEDF131A905AD3AD0 /* Pods_InstantRecordTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2613361C815159A5ED64917D /* Pods-InstantRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord.release.xcconfig"; sourceTree = "<group>"; };
 		43E67F651F515F900016E499 /* InstantRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E67F681F515F900016E499 /* InstantRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantRecord.h; sourceTree = "<group>"; };
 		43E67F691F515F900016E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43E67F6E1F515F900016E499 /* InstantRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E67F731F515F900016E499 /* InstantRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRecordTests.swift; sourceTree = "<group>"; };
 		43E67F751F515F900016E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CE9AE345E163C5E5D02C76 /* Pods-InstantRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		460BA019DFD53146A402B1F6 /* Pods-InstantRecordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A74998A3DF2E6C2B8753F4B /* Pods-InstantRecordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FC6E0ECEDF131A905AD3AD0 /* Pods_InstantRecordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantRecordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEE91D2B4C659D0468BE984 /* Pods_InstantRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3514E37CA443700C2C1E4965 /* Pods_InstantRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E67F6F1F515F900016E499 /* InstantRecord.framework in Frameworks */,
+				5F1970AA4159EE87D6477188 /* Pods_InstantRecordTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				43E67F671F515F900016E499 /* InstantRecord */,
 				43E67F721F515F900016E499 /* InstantRecordTests */,
 				43E67F661F515F900016E499 /* Products */,
+				D023CF3D9E20F0099C566510 /* Pods */,
+				AB44A2C72AABE192CE865B23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,26 @@
 			path = InstantRecordTests;
 			sourceTree = "<group>";
 		};
+		AB44A2C72AABE192CE865B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBEE91D2B4C659D0468BE984 /* Pods_InstantRecord.framework */,
+				7FC6E0ECEDF131A905AD3AD0 /* Pods_InstantRecordTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D023CF3D9E20F0099C566510 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44CE9AE345E163C5E5D02C76 /* Pods-InstantRecord.debug.xcconfig */,
+				2613361C815159A5ED64917D /* Pods-InstantRecord.release.xcconfig */,
+				460BA019DFD53146A402B1F6 /* Pods-InstantRecordTests.debug.xcconfig */,
+				4A74998A3DF2E6C2B8753F4B /* Pods-InstantRecordTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E67F791F515F900016E499 /* Build configuration list for PBXNativeTarget "InstantRecord" */;
 			buildPhases = (
+				B78801B6125214D33CF9813A /* [CP] Check Pods Manifest.lock */,
 				43E67F601F515F900016E499 /* Sources */,
 				43E67F611F515F900016E499 /* Frameworks */,
 				43E67F621F515F900016E499 /* Headers */,
 				43E67F631F515F900016E499 /* Resources */,
+				20A950C01A5FDD49D3D5E6B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E67F7C1F515F900016E499 /* Build configuration list for PBXNativeTarget "InstantRecordTests" */;
 			buildPhases = (
+				AD08E27E65CB82750EBE1A10 /* [CP] Check Pods Manifest.lock */,
 				43E67F6A1F515F900016E499 /* Sources */,
 				43E67F6B1F515F900016E499 /* Frameworks */,
 				43E67F6C1F515F900016E499 /* Resources */,
+				57315E25D5E8D38C0A5D8B26 /* [CP] Embed Pods Frameworks */,
+				F330B86FC040DF0DA8F0661A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +229,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A950C01A5FDD49D3D5E6B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57315E25D5E8D38C0A5D8B26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD08E27E65CB82750EBE1A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B78801B6125214D33CF9813A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F330B86FC040DF0DA8F0661A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43E67F601F515F900016E499 /* Sources */ = {
@@ -323,6 +438,7 @@
 		};
 		43E67F7A1F515F900016E499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CE9AE345E163C5E5D02C76 /* Pods-InstantRecord.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -342,6 +458,7 @@
 		};
 		43E67F7B1F515F900016E499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2613361C815159A5ED64917D /* Pods-InstantRecord.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -361,6 +478,7 @@
 		};
 		43E67F7D1F515F900016E499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460BA019DFD53146A402B1F6 /* Pods-InstantRecordTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9MQ5LQNRF8;
 				INFOPLIST_FILE = InstantRecordTests/Info.plist;
@@ -373,6 +491,7 @@
 		};
 		43E67F7E1F515F900016E499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A74998A3DF2E6C2B8753F4B /* Pods-InstantRecordTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9MQ5LQNRF8;
 				INFOPLIST_FILE = InstantRecordTests/Info.plist;
