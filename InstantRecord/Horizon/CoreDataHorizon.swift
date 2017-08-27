@@ -13,12 +13,35 @@ import MagicalRecord
 class CoreDataHorizon: Horizon {
 
     /// CoreData context on which performing database operations
-    private let context: NSManagedObjectContext
+    fileprivate let context: NSManagedObjectContext
 
 
     /** Initialize with thread context */
     init(with context: NSManagedObjectContext) {
         self.context = context
+    }
+
+}
+
+
+/** Finders */
+extension CoreDataHorizon {
+
+    /// Finds the first record on the provided Entity
+    func first<T: InstantRecordable>(_ type: T.Type) -> T? {
+
+        // make sure type is a `NSManagedObject£
+        guard let searchable = T.self as? NSManagedObject.Type else {
+            fatalError("\(T.self) is not a NSManagedObject type")
+        }
+
+        // find first object
+        if let ret = searchable.mr_findFirst(in: self.context) as? T {
+            return ret
+        }
+
+        // default nil value
+        return nil
     }
 
 }

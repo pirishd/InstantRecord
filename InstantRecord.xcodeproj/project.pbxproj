@@ -18,6 +18,8 @@
 		43E67F8B1F52CB290016E499 /* Horizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F8A1F52CB290016E499 /* Horizon.swift */; };
 		43E67F8D1F52CE430016E499 /* CoreDataHorizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F8C1F52CE430016E499 /* CoreDataHorizon.swift */; };
 		43E67F8F1F532D780016E499 /* CoreDataEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F8E1F532D780016E499 /* CoreDataEngineTests.swift */; };
+		43E67F911F533A3D0016E499 /* CoreDataHorizonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */; };
+		43E67F9E1F53536D0016E499 /* EntityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F9D1F53536D0016E499 /* EntityTest.swift */; };
 		5F1970AA4159EE87D6477188 /* Pods_InstantRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC6E0ECEDF131A905AD3AD0 /* Pods_InstantRecordTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		43E67F8A1F52CB290016E499 /* Horizon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Horizon.swift; path = Horizon/Horizon.swift; sourceTree = "<group>"; };
 		43E67F8C1F52CE430016E499 /* CoreDataHorizon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHorizon.swift; path = Horizon/CoreDataHorizon.swift; sourceTree = "<group>"; };
 		43E67F8E1F532D780016E499 /* CoreDataEngineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataEngineTests.swift; sourceTree = "<group>"; };
+		43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHorizonTests.swift; sourceTree = "<group>"; };
+		43E67F9D1F53536D0016E499 /* EntityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityTest.swift; sourceTree = "<group>"; };
 		44CE9AE345E163C5E5D02C76 /* Pods-InstantRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord.debug.xcconfig"; sourceTree = "<group>"; };
 		460BA019DFD53146A402B1F6 /* Pods-InstantRecordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A74998A3DF2E6C2B8753F4B /* Pods-InstantRecordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,8 +113,10 @@
 		43E67F721F515F900016E499 /* InstantRecordTests */ = {
 			isa = PBXGroup;
 			children = (
+				43E67F921F533C040016E499 /* Tools */,
 				43E67F731F515F900016E499 /* InstantRecordTests.swift */,
 				43E67F8E1F532D780016E499 /* CoreDataEngineTests.swift */,
+				43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */,
 				43E67F751F515F900016E499 /* Info.plist */,
 			);
 			path = InstantRecordTests;
@@ -141,6 +147,14 @@
 				43E67F8C1F52CE430016E499 /* CoreDataHorizon.swift */,
 			);
 			name = Horizon;
+			sourceTree = "<group>";
+		};
+		43E67F921F533C040016E499 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				43E67F9D1F53536D0016E499 /* EntityTest.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		AB44A2C72AABE192CE865B23 /* Frameworks */ = {
@@ -372,8 +386,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E67F9E1F53536D0016E499 /* EntityTest.swift in Sources */,
 				43E67F8F1F532D780016E499 /* CoreDataEngineTests.swift in Sources */,
 				43E67F741F515F900016E499 /* InstantRecordTests.swift in Sources */,
+				43E67F911F533A3D0016E499 /* CoreDataHorizonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

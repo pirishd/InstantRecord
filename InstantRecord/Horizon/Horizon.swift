@@ -15,4 +15,7 @@
  */
 protocol Horizon {
 
+    /// Finds the first record on the provided Entity
+    func first<T: InstantRecordable>(_ type: T.Type) -> T?
+
 }
