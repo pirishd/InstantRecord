@@ -6,6 +6,13 @@
 //  Copyright © 2017 pirishd. All rights reserved.
 //
 
+
+/**
+    Database horizon, which is a scope defined for accessing the database.
+    It enables to perform searches, create, update and delete operations.
+    It is bound to a thread, and cannot be used in a different thread than
+    the one it was created on (like `NSManagedObjectContext` in CoreData
+ */
 protocol Horizon {
 
 }
