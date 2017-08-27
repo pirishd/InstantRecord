@@ -9,7 +9,7 @@
 
 /**
     This class is the entry point for using InstantRecord. It aims at registrating which
-    database engine to use, and provide useful objects for manipulating storage
+    database engine to use, and providing useful objects for manipulating storage
  
     Example of registration:
 
