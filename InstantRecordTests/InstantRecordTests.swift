@@ -9,15 +9,12 @@
 import XCTest
 @testable import InstantRecord
 
-class InstantRecordTests: XCTestCase {
-    
+class InstantRecordTests: InstantRecordTestCase {
 
     func testInstance() {
-
         InstantRecord.setUp(with: CoreDataEngine())
         let instance = InstantRecord.instance
         let instance2 = InstantRecord.instance
-
         XCTAssertTrue(instance === instance2)
     }
 

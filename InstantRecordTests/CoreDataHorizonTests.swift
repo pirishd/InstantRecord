@@ -7,36 +7,16 @@
 //
 
 import XCTest
-import MagicalRecord
 @testable import InstantRecord
 
 
-class CoreDataHorizonTests: XCTestCase {
+class CoreDataHorizonTests: InstantRecordTestCase {
 
     private var horizon: CoreDataHorizon!
-    private var context: NSManagedObjectContext!
 
 
     override func setUp() {
         super.setUp()
-
-        let model = NSManagedObjectModel()
-        let entityDesc = NSEntityDescription()
-        entityDesc.name = "EntityTest"
-        entityDesc.managedObjectClassName = "EntityTest"
-        model.entities = [entityDesc]
-
-        let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
-        _  = try? persistentStoreCoordinator.addPersistentStore(
-            ofType: NSInMemoryStoreType,
-            configurationName: nil,
-            at: nil,
-            options: nil
-        )
-
-        NSManagedObjectContext.mr_initializeDefaultContext(with: persistentStoreCoordinator)
-
-        self.context = NSManagedObjectContext.mr_default()
         self.horizon = CoreDataHorizon(with: self.context)
     }
 

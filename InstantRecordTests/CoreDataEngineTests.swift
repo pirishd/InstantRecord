@@ -10,14 +10,13 @@ import XCTest
 import MagicalRecord
 @testable import InstantRecord
 
-class CoreDataEngineTests: XCTestCase {
+class CoreDataEngineTests: InstantRecordTestCase {
 
     private var engine: CoreDataEngine!
 
 
     override func setUp() {
         super.setUp()
-        MagicalRecord.setupCoreDataStackWithInMemoryStore()
         self.engine = CoreDataEngine()
     }
 

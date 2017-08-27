@@ -11,12 +11,9 @@ import CoreData
 @testable import InstantRecord
 
 
+/// Test entity
 @objc(EntityTest)
 public class EntityTest: NSManagedObject, InstantRecordable {
-
-}
-
-extension EntityTest {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<EntityTest> {
         return NSFetchRequest<EntityTest>(entityName: "EntityTest")
