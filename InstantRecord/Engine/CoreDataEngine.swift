@@ -17,8 +17,10 @@ class CoreDataEngine: Engine {
         return CoreDataHorizon(with: NSManagedObjectContext.mr_default())
     }()
 
+
     /// List of managed horizons
     private var horizons = [Int: Horizon]()
+
 
     /// Current thread horizon
     var currentHorizon: Horizon {
@@ -41,7 +43,7 @@ class CoreDataEngine: Engine {
     }
 
 
-    /** Create a new horizon */
+    /** Create a new horizon for the current thread */
     func createHorizon() -> Horizon {
         return CoreDataHorizon(with: NSManagedObjectContext.mr_())
     }

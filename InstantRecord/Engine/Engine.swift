@@ -7,7 +7,7 @@
 //
 
 
-/** Database engine that aims at providing horizons (ie database contexts) */
+/** Database engine that aims at providing horizons (basically, database contexts) */
 protocol Engine {
     var currentHorizon: Horizon { get }
     func createHorizon() -> Horizon
