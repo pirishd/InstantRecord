@@ -6,7 +6,9 @@
 //  Copyright © 2017 pirishd. All rights reserved.
 //
 
+
+/** Database engine that aims at providing horizons (ie database contexts) */
 protocol Engine {
-
+    var currentHorizon: Horizon { get }
+    func createHorizon() -> Horizon
 }
-
