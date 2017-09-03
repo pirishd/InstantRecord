@@ -15,6 +15,9 @@ import CoreData
 @objc(EntityTest)
 public class EntityTest: NSManagedObject, InstantRecordable {
 
+    @NSManaged public var name: String?
+    @NSManaged public var age: NSNumber?
+
     @nonobjc public class func fetchRequest() -> NSFetchRequest<EntityTest> {
         return NSFetchRequest<EntityTest>(entityName: "EntityTest")
     }

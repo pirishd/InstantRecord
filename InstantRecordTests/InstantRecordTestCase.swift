@@ -23,6 +23,13 @@ class InstantRecordTestCase: XCTestCase {
         let entityDesc = NSEntityDescription()
         entityDesc.name = "EntityTest"
         entityDesc.managedObjectClassName = "EntityTest"
+
+        let propertyNameDesc = NSPropertyDescription()
+        propertyNameDesc.name = "name"
+        let propertyAgeDesc = NSPropertyDescription()
+        propertyAgeDesc.name = "age"
+        entityDesc.properties = [propertyNameDesc, propertyAgeDesc]
+
         model.entities = [entityDesc]
 
         // in-memory store
@@ -39,6 +46,12 @@ class InstantRecordTestCase: XCTestCase {
 
         // set context
         self.context = NSManagedObjectContext.mr_default()
+    }
+
+
+    override func tearDown() {
+        super.tearDown()
+        self.context.reset()
     }
 
 }

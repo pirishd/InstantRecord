@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3514E37CA443700C2C1E4965 /* Pods_InstantRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEE91D2B4C659D0468BE984 /* Pods_InstantRecord.framework */; };
+		431D96671F5AFBC800630F90 /* CoreDataOrderFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96661F5AFBC800630F90 /* CoreDataOrderFormatterTests.swift */; };
+		431D96691F5AFC6B00630F90 /* CoreDataOrderFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96681F5AFC6B00630F90 /* CoreDataOrderFormatter.swift */; };
+		431D96721F5C744600630F90 /* WhereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96711F5C744600630F90 /* WhereTests.swift */; };
+		431D96741F5C83CC00630F90 /* Where.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96731F5C83CC00630F90 /* Where.swift */; };
+		431D96771F5C865A00630F90 /* WhereAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96761F5C865A00630F90 /* WhereAndCondition.swift */; };
+		431D96791F5C87AF00630F90 /* WhereOrCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96781F5C87AF00630F90 /* WhereOrCondition.swift */; };
+		431D967B1F5C882100630F90 /* WhereCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D967A1F5C882100630F90 /* WhereCondition.swift */; };
+		431D967E1F5C8A4200630F90 /* WhereConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D967D1F5C8A4200630F90 /* WhereConditionTests.swift */; };
+		431D96801F5C8AF300630F90 /* WhereAndConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D967F1F5C8AF300630F90 /* WhereAndConditionTests.swift */; };
+		431D96821F5C8B2100630F90 /* WhereOrConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D96811F5C8B2100630F90 /* WhereOrConditionTests.swift */; };
 		43E67F6F1F515F900016E499 /* InstantRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E67F651F515F900016E499 /* InstantRecord.framework */; };
 		43E67F741F515F900016E499 /* InstantRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F731F515F900016E499 /* InstantRecordTests.swift */; };
 		43E67F761F515F900016E499 /* InstantRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E67F681F515F900016E499 /* InstantRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,6 +31,8 @@
 		43E67F911F533A3D0016E499 /* CoreDataHorizonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */; };
 		43E67F9E1F53536D0016E499 /* EntityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F9D1F53536D0016E499 /* EntityTest.swift */; };
 		43E67FA01F535A960016E499 /* InstantRecordTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67F9F1F535A960016E499 /* InstantRecordTestCase.swift */; };
+		43E67FA31F53609C0016E499 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67FA21F53609C0016E499 /* Order.swift */; };
+		43E67FA61F5361270016E499 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E67FA51F5361270016E499 /* Attribute.swift */; };
 		5F1970AA4159EE87D6477188 /* Pods_InstantRecordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC6E0ECEDF131A905AD3AD0 /* Pods_InstantRecordTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +48,16 @@
 
 /* Begin PBXFileReference section */
 		2613361C815159A5ED64917D /* Pods-InstantRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord.release.xcconfig"; sourceTree = "<group>"; };
+		431D96661F5AFBC800630F90 /* CoreDataOrderFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOrderFormatterTests.swift; sourceTree = "<group>"; };
+		431D96681F5AFC6B00630F90 /* CoreDataOrderFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataOrderFormatter.swift; path = Order/CoreDataOrderFormatter.swift; sourceTree = "<group>"; };
+		431D96711F5C744600630F90 /* WhereTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereTests.swift; sourceTree = "<group>"; };
+		431D96731F5C83CC00630F90 /* Where.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Where.swift; path = Where/Where.swift; sourceTree = "<group>"; };
+		431D96761F5C865A00630F90 /* WhereAndCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhereAndCondition.swift; path = Where/WhereAndCondition.swift; sourceTree = "<group>"; };
+		431D96781F5C87AF00630F90 /* WhereOrCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhereOrCondition.swift; path = Where/WhereOrCondition.swift; sourceTree = "<group>"; };
+		431D967A1F5C882100630F90 /* WhereCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhereCondition.swift; path = Where/WhereCondition.swift; sourceTree = "<group>"; };
+		431D967D1F5C8A4200630F90 /* WhereConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereConditionTests.swift; sourceTree = "<group>"; };
+		431D967F1F5C8AF300630F90 /* WhereAndConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereAndConditionTests.swift; sourceTree = "<group>"; };
+		431D96811F5C8B2100630F90 /* WhereOrConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereOrConditionTests.swift; sourceTree = "<group>"; };
 		43E67F651F515F900016E499 /* InstantRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstantRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E67F681F515F900016E499 /* InstantRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantRecord.h; sourceTree = "<group>"; };
 		43E67F691F515F900016E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +74,8 @@
 		43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHorizonTests.swift; sourceTree = "<group>"; };
 		43E67F9D1F53536D0016E499 /* EntityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityTest.swift; sourceTree = "<group>"; };
 		43E67F9F1F535A960016E499 /* InstantRecordTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantRecordTestCase.swift; sourceTree = "<group>"; };
+		43E67FA21F53609C0016E499 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Order.swift; path = Order/Order.swift; sourceTree = "<group>"; };
+		43E67FA51F5361270016E499 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Attribute/Attribute.swift; sourceTree = "<group>"; };
 		44CE9AE345E163C5E5D02C76 /* Pods-InstantRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecord/Pods-InstantRecord.debug.xcconfig"; sourceTree = "<group>"; };
 		460BA019DFD53146A402B1F6 /* Pods-InstantRecordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A74998A3DF2E6C2B8753F4B /* Pods-InstantRecordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantRecordTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstantRecordTests/Pods-InstantRecordTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +104,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431D96751F5C860A00630F90 /* Where */ = {
+			isa = PBXGroup;
+			children = (
+				431D96731F5C83CC00630F90 /* Where.swift */,
+				431D967A1F5C882100630F90 /* WhereCondition.swift */,
+				431D96761F5C865A00630F90 /* WhereAndCondition.swift */,
+				431D96781F5C87AF00630F90 /* WhereOrCondition.swift */,
+			);
+			name = Where;
+			sourceTree = "<group>";
+		};
+		431D967C1F5C896500630F90 /* Where */ = {
+			isa = PBXGroup;
+			children = (
+				431D96711F5C744600630F90 /* WhereTests.swift */,
+				431D967D1F5C8A4200630F90 /* WhereConditionTests.swift */,
+				431D967F1F5C8AF300630F90 /* WhereAndConditionTests.swift */,
+				431D96811F5C8B2100630F90 /* WhereOrConditionTests.swift */,
+			);
+			name = Where;
+			sourceTree = "<group>";
+		};
 		43E67F5B1F515F900016E499 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +153,9 @@
 				43E67F871F52CAEE0016E499 /* InstantRecordable.swift */,
 				43E67F821F5162ED0016E499 /* Engine */,
 				43E67F891F52CB030016E499 /* Horizon */,
+				43E67FA41F5360D90016E499 /* Attribute */,
+				43E67FA11F5360730016E499 /* Order */,
+				431D96751F5C860A00630F90 /* Where */,
 				43E67F811F5161830016E499 /* Supporting Files */,
 			);
 			path = InstantRecord;
@@ -119,6 +168,8 @@
 				43E67F731F515F900016E499 /* InstantRecordTests.swift */,
 				43E67F8E1F532D780016E499 /* CoreDataEngineTests.swift */,
 				43E67F901F533A3D0016E499 /* CoreDataHorizonTests.swift */,
+				431D96661F5AFBC800630F90 /* CoreDataOrderFormatterTests.swift */,
+				431D967C1F5C896500630F90 /* Where */,
 				43E67F751F515F900016E499 /* Info.plist */,
 			);
 			path = InstantRecordTests;
@@ -158,6 +209,23 @@
 				43E67F9F1F535A960016E499 /* InstantRecordTestCase.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		43E67FA11F5360730016E499 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				43E67FA21F53609C0016E499 /* Order.swift */,
+				431D96681F5AFC6B00630F90 /* CoreDataOrderFormatter.swift */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		43E67FA41F5360D90016E499 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				43E67FA51F5361270016E499 /* Attribute.swift */,
+			);
+			name = Attribute;
 			sourceTree = "<group>";
 		};
 		AB44A2C72AABE192CE865B23 /* Frameworks */ = {
@@ -379,9 +447,16 @@
 				43E67F8D1F52CE430016E499 /* CoreDataHorizon.swift in Sources */,
 				43E67F801F5161370016E499 /* InstantRecord.swift in Sources */,
 				43E67F8B1F52CB290016E499 /* Horizon.swift in Sources */,
+				431D96771F5C865A00630F90 /* WhereAndCondition.swift in Sources */,
 				43E67F841F5162FE0016E499 /* Engine.swift in Sources */,
 				43E67F881F52CAEE0016E499 /* InstantRecordable.swift in Sources */,
+				431D967B1F5C882100630F90 /* WhereCondition.swift in Sources */,
 				43E67F861F5163130016E499 /* CoreDataEngine.swift in Sources */,
+				43E67FA61F5361270016E499 /* Attribute.swift in Sources */,
+				431D96791F5C87AF00630F90 /* WhereOrCondition.swift in Sources */,
+				431D96691F5AFC6B00630F90 /* CoreDataOrderFormatter.swift in Sources */,
+				43E67FA31F53609C0016E499 /* Order.swift in Sources */,
+				431D96741F5C83CC00630F90 /* Where.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +465,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E67F9E1F53536D0016E499 /* EntityTest.swift in Sources */,
+				431D967E1F5C8A4200630F90 /* WhereConditionTests.swift in Sources */,
+				431D96801F5C8AF300630F90 /* WhereAndConditionTests.swift in Sources */,
+				431D96671F5AFBC800630F90 /* CoreDataOrderFormatterTests.swift in Sources */,
 				43E67FA01F535A960016E499 /* InstantRecordTestCase.swift in Sources */,
 				43E67F8F1F532D780016E499 /* CoreDataEngineTests.swift in Sources */,
+				431D96821F5C8B2100630F90 /* WhereOrConditionTests.swift in Sources */,
 				43E67F741F515F900016E499 /* InstantRecordTests.swift in Sources */,
 				43E67F911F533A3D0016E499 /* CoreDataHorizonTests.swift in Sources */,
+				431D96721F5C744600630F90 /* WhereTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
