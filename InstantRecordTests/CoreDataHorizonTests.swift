@@ -27,7 +27,7 @@ class CoreDataHorizonTests: InstantRecordTestCase {
 
         let entity = EntityTest.mr_createEntity(in: self.context)
         foundEntity = self.horizon.first(EntityTest.self)
-        XCTAssertTrue(entity === foundEntity)
+        XCTAssertEqual(entity, foundEntity)
     }
 
 
@@ -41,13 +41,13 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         entity1?.name = "bbb"
 
         foundEntity = self.horizon.first(EntityTest.self, sortedBy: order)
-        XCTAssertTrue(entity1 === foundEntity)
+        XCTAssertEqual(entity1, foundEntity)
 
         let entity2 = EntityTest.mr_createEntity(in: self.context)
         entity2?.name = "aaa"
 
         foundEntity = self.horizon.first(EntityTest.self, sortedBy: order)
-        XCTAssertTrue(entity2 === foundEntity)
+        XCTAssertEqual(entity2, foundEntity)
     }
 
 
@@ -58,7 +58,7 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         XCTAssertNil(foundEntity)
 
         let entity1 = EntityTest.mr_createEntity(in: self.context)
-        entity1?.name = "bbb"
+        entity1?.name = "aaa"
         entity1?.age = 12
 
         let entity2 = EntityTest.mr_createEntity(in: self.context)
@@ -67,14 +67,14 @@ class CoreDataHorizonTests: InstantRecordTestCase {
 
         let entity3 = EntityTest.mr_createEntity(in: self.context)
         entity3?.name = "aaa"
-        entity3?.age = 60
+        entity3?.age = 1
 
         let entity4 = EntityTest.mr_createEntity(in: self.context)
         entity4?.name = "ddd"
         entity4?.age = 44
 
         foundEntity = self.horizon.first(EntityTest.self, sortedBy: order)
-        XCTAssertTrue(entity3 === foundEntity)
+        XCTAssertEqual(entity1, foundEntity)
     }
 
 
@@ -93,7 +93,7 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         entity2?.age = 23
 
         foundEntity = self.horizon.first(EntityTest.self, where: criteria)
-        XCTAssertTrue(entity2 === foundEntity)
+        XCTAssertEqual(entity2, foundEntity)
     }
 
 
@@ -113,7 +113,7 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         entity2?.age = 23
 
         foundEntity = self.horizon.first(EntityTest.self, where: criteria, sortedBy: order)
-        XCTAssertTrue(entity2 === foundEntity)
+        XCTAssertEqual(entity2, foundEntity)
     }
 
 
@@ -161,4 +161,35 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         XCTAssertEqual(entities.count, 1)
         XCTAssertEqual(entities.first, entity1)
     }
+
+
+    func testAllSortedBy() {
+        let order = Order(by: Attribute("name")).then(by: Attribute("age"), ascending: false)
+
+        var entities = self.horizon.all(EntityTest.self, sortedBy: order)
+        XCTAssertEqual(entities.count, 0)
+
+        let entity1 = EntityTest.mr_createEntity(in: self.context)
+        entity1?.name = "bbb"
+        entity1?.age = 12
+
+        let entity2 = EntityTest.mr_createEntity(in: self.context)
+        entity2?.name = "ccc"
+        entity2?.age = 23
+
+        let entity3 = EntityTest.mr_createEntity(in: self.context)
+        entity3?.name = "aaa"
+        entity3?.age = 60
+
+        let entity4 = EntityTest.mr_createEntity(in: self.context)
+        entity4?.name = "ccc"
+        entity4?.age = 44
+
+        entities = self.horizon.all(EntityTest.self, sortedBy: order)
+        XCTAssertEqual(entities.first, entity3)
+        XCTAssertEqual(entities[1], entity1)
+        XCTAssertEqual(entities[2], entity4)
+        XCTAssertEqual(entities[3], entity2)
+    }
+
 }

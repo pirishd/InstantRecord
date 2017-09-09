@@ -33,7 +33,10 @@ protocol Horizon {
     /// Returns the number of records for the provided Entity matching given criteria
     func count<T: InstantRecordable>(_ type: T.Type, where: Where) -> Int
 
-    /// Returns all the records of the provided Entity
+    /// Finds all the records of the provided Entity
     func all<T: InstantRecordable>(_ type: T.Type) -> [T]
+
+    /// Finds all the records of the provided Entity sorted by provided order
+    func all<T: InstantRecordable>(_ type: T.Type, sortedBy: Order) -> [T]
 
 }

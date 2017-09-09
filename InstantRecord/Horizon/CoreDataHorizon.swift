@@ -115,12 +115,25 @@ extension CoreDataHorizon {
     /** Returns all the records of the provided Entity */
     func all<T: InstantRecordable>(_ type: T.Type) -> [T] {
         let searchable = self.searchable(from: T.self)
-        let ret = searchable.mr_findAll(in: self.context)?.map({ (obj) -> T? in
-            obj as? T ?? nil
-        }).flatMap { $0 }
-
-        return ret ?? [T]()
+        let found = searchable.mr_findAll(in: self.context)
+        return self.managedObjects(found, to: T.self)
     }
 
+
+    /** Returns all the records of the provided Entity sorted by provided Order */
+    func all<T: InstantRecordable>(_ type: T.Type, sortedBy order: Order) -> [T] {
+        let searchable = self.searchable(from: T.self)
+        let attribute = self.orderFormatter.format(order)
+
+        let found = searchable.mr_findAllSorted(by: attribute, ascending: true, in: self.context)
+        return self.managedObjects(found, to: T.self)
+    }
+
+
+    /** Convert a list of `NSManagedObject` to array of given type */
+    private func managedObjects<T: InstantRecordable>(_ objects: [NSManagedObject]?, to type: T.Type) -> [T] {
+        let ret = objects?.map({ (obj) -> T? in obj as? T }).flatMap { $0 }
+        return ret ?? [T]()
+    }
 
 }
