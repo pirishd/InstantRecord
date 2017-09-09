@@ -105,4 +105,10 @@ extension CoreDataHorizon {
     }
 
 
+    /** Returns the number of records for the provided Entity matching given criteria */
+    func count<T: InstantRecordable>(_ type: T.Type, where criteria: Where) -> Int {
+        let searchable = self.searchable(from: T.self)
+        return searchable.mr_numberOfEntities(with: criteria.predicate, in: self.context).intValue
+    }
+
 }

@@ -129,4 +129,23 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         XCTAssertEqual(numberOfEntities, 1)
     }
 
+
+    func testCountWhere() {
+        let criteria = Attribute("name") == "aaa"
+
+        var numberOfEntities = self.horizon.count(EntityTest.self, where: criteria)
+        XCTAssertEqual(numberOfEntities, 0)
+
+        let entity1 = EntityTest.mr_createEntity(in: self.context)
+        entity1?.name = "aaa"
+        entity1?.age = 32
+
+        let entity2 = EntityTest.mr_createEntity(in: self.context)
+        entity2?.name = "bbb"
+        entity2?.age = 33
+
+        numberOfEntities = self.horizon.count(EntityTest.self, where: criteria)
+        XCTAssertEqual(numberOfEntities, 1)
+    }
+
 }

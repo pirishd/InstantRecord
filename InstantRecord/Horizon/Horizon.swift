@@ -30,4 +30,7 @@ protocol Horizon {
     /// Returns the number of records for the provided Entity
     func count<T: InstantRecordable>(_ type: T.Type) -> Int
 
+    /// Returns the number of records for the provided Entity matching given criteria
+    func count<T: InstantRecordable>(_ type: T.Type, where: Where) -> Int
+
 }
