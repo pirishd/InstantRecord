@@ -111,4 +111,16 @@ extension CoreDataHorizon {
         return searchable.mr_numberOfEntities(with: criteria.predicate, in: self.context).intValue
     }
 
+
+    /** Returns all the records of the provided Entity */
+    func all<T: InstantRecordable>(_ type: T.Type) -> [T] {
+        let searchable = self.searchable(from: T.self)
+        let ret = searchable.mr_findAll(in: self.context)?.map({ (obj) -> T? in
+            obj as? T ?? nil
+        }).flatMap { $0 }
+
+        return ret ?? [T]()
+    }
+
+
 }

@@ -15,16 +15,16 @@
  */
 protocol Horizon {
 
-    /// Finds the first record on the provided Entity
+    /// Finds the first record of the provided Entity
     func first<T: InstantRecordable>(_ type: T.Type) -> T?
 
-    /// Finds the first record on the provided Entity sorted by provided order
+    /// Finds the first record of the provided Entity sorted by provided order
     func first<T: InstantRecordable>(_ type: T.Type, sortedBy: Order) -> T?
 
-    /// Finds the first record on the provided Entity matching given criteria
+    /// Finds the first record of the provided Entity matching given criteria
     func first<T: InstantRecordable>(_ type: T.Type, where: Where) -> T?
 
-    /// Finds the first record on the provided Entity matching given criteria, sorted by provided order
+    /// Finds the first record of the provided Entity matching given criteria, sorted by provided order
     func first<T: InstantRecordable>(_ type: T.Type, where: Where, sortedBy: Order) -> T?
 
     /// Returns the number of records for the provided Entity
@@ -32,5 +32,8 @@ protocol Horizon {
 
     /// Returns the number of records for the provided Entity matching given criteria
     func count<T: InstantRecordable>(_ type: T.Type, where: Where) -> Int
+
+    /// Returns all the records of the provided Entity
+    func all<T: InstantRecordable>(_ type: T.Type) -> [T]
 
 }
