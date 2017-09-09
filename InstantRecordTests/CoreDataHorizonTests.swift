@@ -192,4 +192,24 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         XCTAssertEqual(entities[3], entity2)
     }
 
+
+    func testAllWhere() {
+        let criteria = Attribute("name") == "aaa" && Attribute("age") != 32
+
+        var entities = self.horizon.all(EntityTest.self, where: criteria)
+        XCTAssertEqual(entities.count, 0)
+
+        let entity1 = EntityTest.mr_createEntity(in: self.context)
+        entity1?.name = "bbb"
+        entity1?.age = 32
+
+        let entity2 = EntityTest.mr_createEntity(in: self.context)
+        entity2?.name = "aaa"
+        entity2?.age = 23
+
+        entities = self.horizon.all(EntityTest.self, where: criteria)
+        XCTAssertEqual(entities.count, 1)
+        XCTAssertEqual(entities.first, entity2)
+    }
+
 }
