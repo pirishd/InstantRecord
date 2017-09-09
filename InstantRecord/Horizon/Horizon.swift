@@ -42,4 +42,7 @@ protocol Horizon {
     /// Finds all the records of the provided Entity matching given criteria
     func all<T: InstantRecordable>(_ type: T.Type, where: Where) -> [T]
 
+    /// Finds all the records of the provided Entity matching given criteria sorted by provided order
+    func all<T: InstantRecordable>(_ type: T.Type, where: Where, sortedBy: Order) -> [T]
+
 }
