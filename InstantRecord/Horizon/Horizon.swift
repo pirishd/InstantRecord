@@ -27,4 +27,7 @@ protocol Horizon {
     /// Finds the first record on the provided Entity matching given criteria, sorted by provided order
     func first<T: InstantRecordable>(_ type: T.Type, where: Where, sortedBy: Order) -> T?
 
+    /// Returns the number of records for the provided Entity
+    func count<T: InstantRecordable>(_ type: T.Type) -> Int
+
 }

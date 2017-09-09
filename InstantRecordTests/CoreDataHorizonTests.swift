@@ -116,4 +116,17 @@ class CoreDataHorizonTests: InstantRecordTestCase {
         XCTAssertTrue(entity2 === foundEntity)
     }
 
+
+    func testCount() {
+        var numberOfEntities = self.horizon.count(EntityTest.self)
+        XCTAssertEqual(numberOfEntities, 0)
+
+        let entity1 = EntityTest.mr_createEntity(in: self.context)
+        entity1?.name = "aaa"
+        entity1?.age = 32
+
+        numberOfEntities = self.horizon.count(EntityTest.self)
+        XCTAssertEqual(numberOfEntities, 1)
+    }
+
 }
